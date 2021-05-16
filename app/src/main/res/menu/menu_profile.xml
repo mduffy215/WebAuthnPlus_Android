@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tnxsecure.webauthnplus.Profile">
+
+    <item
+        android:id="@+id/credentials"
+        android:title="@string/credentials"/>
+
+    <item
+        android:id="@+id/about_tnx"
+        android:title="@string/about_tnx"/>
+
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit_name"/>
+</menu>

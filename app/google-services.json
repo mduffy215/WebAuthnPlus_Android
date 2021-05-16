@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806672998807",
+    "firebase_url": "https://tnxsecure.firebaseio.com",
+    "project_id": "webauthnplus",
+    "storage_bucket": "webauthnplus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806672998807:android:b9160212c9370d25",
+        "android_client_info": {
+          "package_name": "com.tnxsecure.webauthnplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806672998807-koalhdjcpbu0dulqq78c3s9bsgvbn9c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tnxsecure.webauthnplus",
+            "certificate_hash": "f97d7a67498e2f9a204d14d9ac6ad1c0eb3d55de"
+          }
+        },
+        {
+          "client_id": "806672998807-e52c18hs813imcrmnqq0cld709eocmrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpgbNW4tp3UJhyT_KfemlbRIgwMXrTs_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806672998807-e52c18hs813imcrmnqq0cld709eocmrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

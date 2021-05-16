@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#FFDCE7ED</color>
+    <color name="background2">#FFF0F0F0</color>
+    <color name="header_color">#FFFFFFFF</color>
+    <color name="primary_color">#FF6600FF</color>
+    <color name="accent_color">#FF6600FF</color>
+    <color name="actionbar_header_color">#FFFFFFFF</color>
+    <color name="label_color">#FF000000</color>
+    <color name="text_color">#FF000000</color>
+    <color name="ivy_color">#FF07524A</color>
+    <color name="low_key_color">#FF888888</color>
+    <color name="bar_color">#FF6600FF</color>
+    <color name="bar_color2">#FF000000</color>
+    <color name="checkbox_background_color">#FFFFFFFF</color>
+    <color name="verification_code_color">#FFCC0000</color>
+    <color name="emphasis_color">#FF6600FF</color>
+    <color name="warning_color">#FFCC0000</color>
+    <color name="alert_color">#FFCC0000</color>
+    <color name="guarantee_color">#FF008A00</color>
+    <color name="button_label_color">#FFFFFFFF</color>
+    <color name="header_inactive_color">#FFAAAAAA</color>
+
+</resources>

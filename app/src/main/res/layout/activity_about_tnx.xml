@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded,ButtonStyle,TooManyViews">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+        <TextView
+            android:id="@+id/activate_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:text="@string/tnx_overview"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_text"
+            android:typeface="normal"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:background="@color/bar_color" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/demo_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_mode"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/font_size_text"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:background="@color/bar_color" >
+        </View>
+
+    </LinearLayout>
+</ScrollView>

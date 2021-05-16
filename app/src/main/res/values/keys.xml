@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="eula_key">eula</string>
+    <string name="user_created_key">USER_CREATED_KEY</string>
+    <string name="sign_on_successful_key">SIGN_ON_SUCCESSFUL_KEY</string>
+    <string name="last_interaction_key">LAST_INTERACTION_KEY</string>
+    <string name="demo_mode_key">DEMO_MODE_KEY</string>
+
+    <string name="screen_name_key">SCREEN_NAME_KEY</string>
+    <string name="email_key">EMAIL_KEY</string>
+    
+    <string name="first_name_key">FIRST_NAME_KEY</string>
+    <string name="last_name_key">LAST_NAME_KEY</string>
+    <string name="phone_key">PHONE_KEY</string>
+    <string name="firebase_device_id">FIREBASE_DEVICE_ID</string>
+    
+    <string name="legal_address_line_one_key">LEGAL_ADDRESS_LINE_ONE_KEY</string>
+    <string name="legal_address_line_two_key">LEGAL_ADDRESS_LINE_TWO_KEY</string>
+    <string name="legal_address_city_key">LEGAL_CITY_KEY</string>
+    <string name="legal_address_state_key">LEGAL_STATE_KEY</string>
+    <string name="legal_address_postal_code_key">LEGAL_POSTAL_CODE_KEY</string>
+    <string name="legal_address_country_key">LEGAL_COUNTRY_KEY</string>
+    
+    <string name="same_address_key">SAME_ADDRESS_KEY</string>
+    
+    <string name="mail_type_legal_key">1</string>
+    <string name="mail_type_mailing_key">2</string>
+    <string name="mail_type_legal_and_mailing_key">3</string>
+    <string name="mail_type_organization_key">4</string>
+    
+    <string name="mailing_address_line_one_key">MAILING_ADDRESS_LINE_ONE_KEY</string>
+    <string name="mailing_address_line_two_key">MAILING_ADDRESS_LINE_TWO_KEY</string>
+    <string name="mailing_address_city_key">MAILING_CITY_KEY</string>
+    <string name="mailing_address_state_key">MAILING_STATE_KEY</string>
+    <string name="mailing_address_postal_code_key">MAILING_POSTAL_COD_KEY</string>
+    <string name="mailing_address_country_key">MAILING_COUNTRY_KEY</string>
+    
+    <string name="organization_name_key">ORGANIZATION_NAME_KEY</string>
+    <string name="organization_url_key">ORGANIZATION_URL_KEY</string>
+    <string name="organization_title_key">ORGANIZATION_TITLE_KEY</string>
+    <string name="organization_phone_key">ORGANIZATION_PHONE_KEY</string>
+    
+    <string name="organization_address_line_one_key">ORGANIZATION_ADDRESS_LINE_ONE_KEY</string>
+    <string name="organization_address_line_two_key">ORGANIZATION_ADDRESS_LINE_TWO_KEY</string>
+    <string name="organization_address_city_key">ORGANIZATION_CITY_KEY</string>
+    <string name="organization_address_state_key">ORGANIZATION_STATE_KEY</string>
+    <string name="organization_address_postal_code_key">ORGANIZATION_POSTAL_COD_KEY</string>
+    <string name="organization_address_country_key">ORGANIZATION_COUNTRY_KEY</string>
+
+    <string name="authentication_code_key">AUTHENTICATION_CODE_KEY</string>
+    <string name="verification_code_key">VERIFICATION_CODE_KEY</string>
+    <string name="credential_provider_name_key">CREDENTIAL_PROVIDER_NAME_KEY</string>
+    <string name="create_credential_result_key">CREATE_CREDENTIAL_RESULT_KEY</string>
+    <string name="pin_string_key">PIN_STRING</string>
+    
+    <string name="crypto_salt_key">CRYPTO_SALT_KEY</string>
+    <string name="crypto_private_key">CRYPTO_PRIVATE_KEY</string>
+    <string name="crypto_public_key">CRYPTO_PUBLIC_KEY</string>
+    <string name="user_uuid_key">USER_UUID_KEY</string>
+    <string name="obfuscated_identifier_key">OBFUSCATED_IDNETIFIER_KEY</string>
+    <string name="retrieve_transaction_uuid_url_key">RETRIEVE_TRANSACTION_UUID_URL</string>
+    <string name="credential_provider_uuid_key">CREDENTIAL_PROVIDER_UUID</string>
+    <string name="public_key_uuid_key">PUBLIC_KEY_UUID</string>
+    <string name="public_key_hex_key">PUBLIC_KEY_HEX</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+

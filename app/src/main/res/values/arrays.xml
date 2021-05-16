@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="credential_options">
+        <item>@string/delete_credential</item>
+        <item>@string/keep_credential</item>
+    </array>
+
+    <string-array name="months">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="years">
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+    </string-array>
+    
+    <string-array name="countries">
+        <item></item>
+        <item>US ~ United States</item>
+        <item>AF ~ Afghanistan</item>
+        <item>AX ~ Aland Islands</item>
+        <item>AL ~ Albania</item>
+        <item>DZ ~ Algeria</item>
+        <item>AS ~ American Samoa</item>
+        <item>AD ~ Andorra</item>
+        <item>AO ~ Angola</item>
+        <item>AI ~ Anguilla</item>
+        <item>AQ ~ Antarctica</item>
+        <item>AG ~ Antigua and Barbuda</item>
+        <item>AR ~ Argentina</item>
+        <item>AM ~ Armenia</item>
+        <item>AW ~ Aruba</item>
+        <item>AU ~ Australia</item>
+        <item>AT ~ Austria</item>
+        <item>AZ ~ Azerbaijan</item>
+        <item>BS ~ Bahamas, The</item>
+        <item>BH ~ Bahrain</item>
+        <item>BD ~ Bangladesh</item>
+        <item>BB ~ Barbados</item>
+        <item>BY ~ Belarus</item>
+        <item>BE ~ Belgium</item>
+        <item>BZ ~ Belize</item>
+        <item>BJ ~ Benin</item>
+        <item>BM ~ Bermuda</item>
+        <item>BT ~ Bhutan</item>
+        <item>BO ~ Bolivia</item>
+        <item>BQ ~ Bonaire, Saint Eustatius and Saba</item>
+        <item>BA ~ Bosnia and Herzegovina</item>
+        <item>BW ~ Botswana</item>
+        <item>BV ~ Bouvet Island</item>
+        <item>BR ~ Brazil</item>
+        <item>IO ~ British Indian Ocean Territory</item>
+        <item>BN ~ Brunei Darussalam</item>
+        <item>BG ~ Bulgaria</item>
+        <item>BF ~ Burkina Faso</item>
+        <item>BI ~ Burundi</item>
+        <item>KH ~ Cambodia</item>
+        <item>CM ~ Cameroon</item>
+        <item>CA ~ Canada</item>
+        <item>CV ~ Cape Verde</item>
+        <item>KY ~ Cayman Islands</item>
+        <item>CF ~ Central African Republic</item>
+        <item>TD ~ Chad</item>
+        <item>CL ~ Chile</item>
+        <item>CN ~ China</item>
+        <item>CX ~ Christmas Island</item>
+        <item>CC ~ Cocos (Keeling) Islands</item>
+        <item>CO ~ Colombia</item>
+        <item>KM ~ Comoros</item>
+        <item>CG ~ Congo</item>
+        <item>CD ~ Congo, The Democratic Republic Of The</item>
+        <item>CK ~ Cook Islands</item>
+        <item>CR ~ Costa Rica</item>
+        <item>CI ~ Cote D\'ivoire</item>
+        <item>HR ~ Croatia</item>
+        <item>CW ~ Curaçao</item>
+        <item>CY ~ Cyprus</item>
+        <item>CZ ~ Czech Republic</item>
+        <item>DK ~ Denmark</item>
+        <item>DJ ~ Djibouti</item>
+        <item>DM ~ Dominica</item>
+        <item>DO ~ Dominican Republic</item>
+        <item>EC ~ Ecuador</item>
+        <item>EG ~ Egypt</item>
+        <item>SV ~ El Salvador</item>
+        <item>GQ ~ Equatorial Guinea</item>
+        <item>ER ~ Eritrea</item>
+        <item>EE ~ Estonia</item>
+        <item>ET ~ Ethiopia</item>
+        <item>FK ~ Falkland Islands (Malvinas)</item>
+        <item>FO ~ Faroe Islands</item>
+        <item>FJ ~ Fiji</item>
+        <item>FI ~ Finland</item>
+        <item>FR ~ France</item>
+        <item>GF ~ French Guiana</item>
+        <item>PF ~ French Polynesia</item>
+        <item>TF ~ French Southern Territories</item>
+        <item>GA ~ Gabon</item>
+        <item>GM ~ Gambia, The</item>
+        <item>GE ~ Georgia</item>
+        <item>DE ~ Germany</item>
+        <item>GH ~ Ghana</item>
+        <item>GI ~ Gibraltar</item>
+        <item>GR ~ Greece</item>
+        <item>GL ~ Greenland</item>
+        <item>GD ~ Grenada</item>
+        <item>GP ~ Guadeloupe</item>
+        <item>GU ~ Guam</item>
+        <item>GT ~ Guatemala</item>
+        <item>GG ~ Guernsey</item>
+        <item>GN ~ Guinea</item>
+        <item>GW ~ Guinea-Bissau</item>
+        <item>GY ~ Guyana</item>
+        <item>HT ~ Haiti</item>
+        <item>HM ~ Heard Island and the McDonald Islands</item>
+        <item>VA ~ Holy See</item>
+        <item>HN ~ Honduras</item>
+        <item>HK ~ Hong Kong</item>
+        <item>HU ~ Hungary</item>
+        <item>IS ~ Iceland</item>
+        <item>IN ~ India</item>
+        <item>ID ~ Indonesia</item>
+        <item>IQ ~ Iraq</item>
+        <item>IE ~ Ireland</item>
+        <item>IM ~ Isle Of Man</item>
+        <item>IL ~ Israel</item>
+        <item>IT ~ Italy</item>
+        <item>JM ~ Jamaica</item>
+        <item>JP ~ Japan</item>
+        <item>JE ~ Jersey</item>
+        <item>JO ~ Jordan</item>
+        <item>KZ ~ Kazakhstan</item>
+        <item>KE ~ Kenya</item>
+        <item>KI ~ Kiribati</item>
+        <item>KR ~ Korea, Republic Of</item>
+        <item>KW ~ Kuwait</item>
+        <item>KG ~ Kyrgyzstan</item>
+        <item>LA ~ Lao People\'s Democratic Republic</item>
+        <item>LV ~ Latvia</item>
+        <item>LB ~ Lebanon</item>
+        <item>LS ~ Lesotho</item>
+        <item>LR ~ Liberia</item>
+        <item>LY ~ Libya</item>
+        <item>LI ~ Liechtenstein</item>
+        <item>LT ~ Lithuania</item>
+        <item>LU ~ Luxembourg</item>
+        <item>MO ~ Macao</item>
+        <item>MK ~ Macedonia, The Former Yugoslav Republic Of</item>
+        <item>MG ~ Madagascar</item>
+        <item>MW ~ Malawi</item>
+        <item>MY ~ Malaysia</item>
+        <item>MV ~ Maldives</item>
+        <item>ML ~ Mali</item>
+        <item>MT ~ Malta</item>
+        <item>MH ~ Marshall Islands</item>
+        <item>MQ ~ Martinique</item>
+        <item>MR ~ Mauritania</item>
+        <item>MU ~ Mauritius</item>
+        <item>YT ~ Mayotte</item>
+        <item>MX ~ Mexico</item>
+        <item>FM ~ Micronesia, Federated States Of</item>
+        <item>MD ~ Moldova, Republic Of</item>
+        <item>MC ~ Monaco</item>
+        <item>MN ~ Mongolia</item>
+        <item>ME ~ Montenegro</item>
+        <item>MS ~ Montserrat</item>
+        <item>MA ~ Morocco</item>
+        <item>MZ ~ Mozambique</item>
+        <item>MM ~ Myanmar</item>
+        <item>NA ~ Namibia</item>
+        <item>NR ~ Nauru</item>
+        <item>NP ~ Nepal</item>
+        <item>NL ~ Netherlands</item>
+        <item>AN ~ Netherlands Antilles</item>
+        <item>NC ~ New Caledonia</item>
+        <item>NZ ~ New Zealand</item>
+        <item>NI ~ Nicaragua</item>
+        <item>NE ~ Niger</item>
+        <item>NG ~ Nigeria</item>
+        <item>NU ~ Niue</item>
+        <item>NF ~ Norfolk Island</item>
+        <item>MP ~ Northern Mariana Islands</item>
+        <item>NO ~ Norway</item>
+        <item>OM ~ Oman</item>
+        <item>PK ~ Pakistan</item>
+        <item>PW ~ Palau</item>
+        <item>PS ~ Palestinian Territories</item>
+        <item>PA ~ Panama</item>
+        <item>PG ~ Papua New Guinea</item>
+        <item>PY ~ Paraguay</item>
+        <item>PE ~ Peru</item>
+        <item>PH ~ Philippines</item>
+        <item>PN ~ Pitcairn</item>
+        <item>PL ~ Poland</item>
+        <item>PT ~ Portugal</item>
+        <item>PR ~ Puerto Rico</item>
+        <item>QA ~ Qatar</item>
+        <item>RE ~ Reunion</item>
+        <item>RO ~ Romania</item>
+        <item>RU ~ Russian Federation</item>
+        <item>RW ~ Rwanda</item>
+        <item>BL ~ Saint Barthelemy</item>
+        <item>SH ~ Saint Helena</item>
+        <item>KN ~ Saint Kitts and Nevis</item>
+        <item>LC ~ Saint Lucia</item>
+        <item>MF ~ Saint Martin</item>
+        <item>PM ~ Saint Pierre and Miquelon</item>
+        <item>VC ~ Saint Vincent and The Grenadines</item>
+        <item>WS ~ Samoa</item>
+        <item>SM ~ San Marino</item>
+        <item>ST ~ Sao Tome and Principe</item>
+        <item>SA ~ Saudi Arabia</item>
+        <item>SN ~ Senegal</item>
+        <item>RS ~ Serbia</item>
+        <item>SC ~ Seychelles</item>
+        <item>SL ~ Sierra Leone</item>
+        <item>SG ~ Singapore</item>
+        <item>SX ~ Sint Maarten</item>
+        <item>SK ~ Slovakia</item>
+        <item>SI ~ Slovenia</item>
+        <item>SB ~ Solomon Islands</item>
+        <item>SO ~ Somalia</item>
+        <item>ZA ~ South Africa</item>
+        <item>GS ~ South Georgia and the South Sandwich Islands</item>
+        <item>ES ~ Spain</item>
+        <item>LK ~ Sri Lanka</item>
+        <item>SR ~ Suriname</item>
+        <item>SJ ~ Svalbard and Jan Mayen</item>
+        <item>SZ ~ Swaziland</item>
+        <item>SE ~ Sweden</item>
+        <item>CH ~ Switzerland</item>
+        <item>TW ~ Taiwan</item>
+        <item>TJ ~ Tajikistan</item>
+        <item>TZ ~ Tanzania, United Republic Of</item>
+        <item>TH ~ Thailand</item>
+        <item>TL ~ Timor-leste</item>
+        <item>TG ~ Togo</item>
+        <item>TK ~ Tokelau</item>
+        <item>TO ~ Tonga</item>
+        <item>TT ~ Trinidad and Tobago</item>
+        <item>TN ~ Tunisia</item>
+        <item>TR ~ Turkey</item>
+        <item>TM ~ Turkmenistan</item>
+        <item>TC ~ Turks and Caicos Islands</item>
+        <item>TV ~ Tuvalu</item>
+        <item>UG ~ Uganda</item>
+        <item>UA ~ Ukraine</item>
+        <item>AE ~ United Arab Emirates</item>
+        <item>GB ~ United Kingdom</item>
+        <item>UM ~ United States Minor Outlying Islands</item>
+        <item>UY ~ Uruguay</item>
+        <item>UZ ~ Uzbekistan</item>
+        <item>VU ~ Vanuatu</item>
+        <item>VE ~ Venezuela</item>
+        <item>VN ~ Vietnam</item>
+        <item>VG ~ Virgin Islands, British</item>
+        <item>VI ~ Virgin Islands, U.S.</item>
+        <item>WF ~ Wallis and Futuna</item>
+        <item>EH ~ Western Sahara</item>
+        <item>YE ~ Yemen</item>
+        <item>ZM ~ Zambia</item>
+        <item>ZW ~ Zimbabwe</item>
+    </string-array>
+
+</resources>

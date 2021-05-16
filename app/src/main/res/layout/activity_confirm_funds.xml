@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+        <TextView
+            android:id="@+id/message_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:text="@string/funds_transfer_message"
+            android:textColor="@color/alert_color"
+            android:textSize="@dimen/font_size_text"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/image_credential_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/credential_icon"/>
+
+            <TextView
+                android:id="@+id/provider_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_credential_icon"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/provider_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/provider_name"
+                android:layout_toRightOf="@+id/image_credential_icon"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/provider_url"
+                android:layout_toRightOf="@+id/image_credential_icon"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/emphasis_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/recipient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/emphasis_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/recipient_phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipient_name"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/recipient_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipient_phone_number"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/transfer_amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/transfer_amount_label"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/transfer_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/transfer_amount_label"
+                android:paddingBottom="0dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_text"
+                android:typeface="normal"/>
+
+            <TextView
+                android:id="@+id/message_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transfer_amount_label"
+                android:paddingTop="6dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:text="@string/funds_transfer_confirmed"
+                android:textColor="@color/emphasis_color"
+                android:textSize="@dimen/font_size_text"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bar_height"
+            android:layout_marginTop="6dp"
+            android:background="@color/bar_color" >
+        </View>
+
+    </LinearLayout>
+
+</LinearLayout>

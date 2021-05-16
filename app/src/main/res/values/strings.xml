@@ -1,0 +1,351 @@
+<resources>
+    <string name="hex_0">0</string>
+    <string name="hex_1">1</string>
+    <string name="hex_2">2</string>
+    <string name="hex_3">3</string>
+    <string name="hex_4">4</string>
+    <string name="hex_5">5</string>
+    <string name="hex_6">6</string>
+    <string name="hex_7">7</string>
+
+    <string name="hex_8">8</string>
+    <string name="hex_9">9</string>
+    <string name="hex_A">A</string>
+    <string name="hex_B">B</string>
+    <string name="hex_C">C</string>
+    <string name="hex_D">D</string>
+    <string name="hex_E">E</string>
+    <string name="hex_F">F</string>
+
+    <string name="eula_header"> EULA </string>
+    <string name="accept">Accept</string>
+    <string name="eula_acceptance">You accepted the EULA!</string>
+
+    <string name="tnx_overview">The Trust Nexus (TNX) is an open source ecosystem that provides cryptographically secure mobile identity.
+                                \n
+                                \nThe ecosystem has two components:
+                                \n
+                                \n    TNX Mobile Application (\"WebAuthn+\")
+                                \n    TNX Web Application
+                                \n
+                                \nThe source code and licensing details can be found at www.tnxsecure.com.
+                                \n
+                                \nA security system is truly secure if the detailed plans of the system are known and the bad actors can still not break in.
+                                \n
+                                \nWith every line of the source code available and with only one known exploit***, the Trust Nexus (TNX) is a highly secure
+                                  identity ecosystem that is incredibly easy to use.
+                                \n
+                                \nThe license has restrictions.  The most important restriction is that the API allowing anyone to add
+                                  a credential to the TNX Mobile Application must be maintained.
+                                \n
+                                \nThe license is free for authenticating external users (e.g., banking customers);
+                                  there is an annual per user license fee for internal authentication (e.g., banking employees).
+                                \n
+                                \n***The only known exploit occurs when someone looks over your shoulder, steals your password,
+                                  then steals your phone and signs on before you can report your phone stolen.
+                                \n
+                                \n&#169; TNX Secure, Inc.</string>
+
+    <string name="optional_info">Only your Screen Name and Contact Email Address are required to begin.
+                                 \n
+                                 \nThe advantage of filling out the following information is that as more websites implement the TNX system,
+                                   you will only need to enter this information once in your mobile device and never have to fill out a web form again.
+                                 \n
+                                 \nYou can edit this information in the future by selecting Profile from the Options menu</string>
+
+    <string name="about_tnx">About TNX</string>
+    <string name="demo_mode">Demo Mode</string>
+    <string name="user_created">User Created</string>
+    <string name="activity_label_about_tnx">WebAuthn+ - About TNX</string>
+    <string name="activity_label_confirm_purchase">WebAuthn+ - Confirm Purchase</string>
+    <string name="activity_label_activate">WebAuthn+ - Activate</string>
+    <string name="activity_label_credentials">WebAuthn+ - Credentials</string>
+    <string name="activity_label_profile">WebAuthn+ - Profile</string>
+    <string name="activity_label_personal_data">WebAuthn+ - Personal Data</string>
+    <string name="activity_label_send_funds">WebAuthn+ - Send Funds</string>
+    <string name="activity_label_receive_funds">WebAuthn+ - Receive Funds</string>
+    <string name="activity_label_confirm_funds">WebAuthn+ - Funds Transfer Confirmed</string>
+    <string name="activity_label_dlt_signature">WebAuthn+ - DLT Signature</string>
+    <string name="activate">Activate</string>
+    <string name="activate_create">Begin by creating your password.</string>
+    <string name="app_activation">TNX Activation</string>
+    <string name="app_name">WebAuthn+</string>
+    <string name="app_name_tnx">TNX WebAuthn+</string>
+    <string name="application_icon">Application icon.</string>
+    <string name="application_timeout">Application Timeout</string>
+    <string name="clear_start_again">Clear / Start Again</string>
+    <string name="credential_icon">Credential Icon</string>
+    <string name="dash">-</string>
+    <string name="delete_button">&#60;&#60;&#60; DEL</string>
+    <string name="financial_credentials">Financial Credentials</string>
+    <string name="credentials">Credentials</string>
+
+    <string name="incomplete_profile">Incomplete Profile</string>
+    <string name="menu_icon">Menu icon.</string>
+    <string name="max_idle_time_exceeded">Max idle time exceeded.</string>
+    <string name="ok">OK</string>
+    <string name="profile_requirements">Screen Name and Contact Email are required.</string>
+    <string name="sign_on_successful">Sign On Successful.</string>
+    <string name="already_signed_on">You are already signed on.</string>
+    <string name="update_contacts">Please Update Phone Contacts</string>
+    <string name="contacts_requirements">A phone number and email address are both required to transfer funds.</string>
+    <string name="phone_not_in_profile">Phone not in \"WebAuthn+ Profile\"</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="authority">com.thetrustnexus.cms</string>
+    <string name="main_header">Secure Digital Credentials</string>
+    <string name="authentication_message">Go to your web application\'s sign on page.\nA cryptographically secure message will be sent to this app.</string>
+    <string name="bluetooth_instructions">"Pair" your mobile device from the pairing screen in your browser.</string>
+    <string name="bluetooth_pairing_successful">Bluetooth pairing successful.</string>
+    <string name="domain_name_confirmed">Domain name confirmed: </string>
+    <string name="signature_instructions">Verify the authentication code then touch \"Signature\".</string>
+    <string name="overview_credential">You can sign onto your web applications or make a payment by simply touching the associated icon from the list below.</string>
+    <string name="scroll_view">As you add more credentials to this digital wallet, they will be displayed in the scroll view below.</string>
+    <string name="contacts_message">Touch a record from the following list to send funds to that contact.  The contact must have both a phone number and an email address.</string>
+    <string name="transfer_funds_message">Simply touch a financial credntial below to send funds to someone in your contacts.</string>
+    <string name="funds_transfer_message">This is a test.  All values are test values.</string>
+    <string name="funds_transfer_retrieving_data">Retrieving funds transfer data.</string>
+    <string name="funds_transfer_accept_cancel">Touch \"Accept\" or \"Cancel\".</string>
+    <string name="funds_transfer_confirmed">Funds transfer confirmed by sending and receiving banks.</string>
+    <string name="from">From: </string>
+
+    <string name="credential_type_financial">Financial</string>
+    <string name="account_balance_label">Account Balance: </string>
+    <string name="transfer_amount_label">Transfer Amount: </string>
+    <string name="preferences">Preferences</string>
+    <string name="profile">Profile</string>
+    <string name="exit_name">Exit</string>
+    <string name="astericks">*** </string>
+    <string name="required">Required</string>
+    <string name="optional">Optional Settings</string>
+    <string name="screen_name">Screen Name</string>
+    <string name="contact_email">Contact Email Address</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="legal_address">Legal Address</string>
+    <string name="address_line_one">Address Line One</string>
+    <string name="address_line_two">Address Line Two</string>
+    <string name="city">City</string>
+    <string name="state">State / Province</string>
+    <string name="postal_code">Zip / Postal Code</string>
+    <string name="country">Country</string>
+    <string name="mailing_address">Mailing Address</string>
+    <string name="same_as_legal_address">Same as Legal Address</string>
+    <string name="organization">Organization</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="organization_title">Your Title</string>
+    <string name="organization_phone">Organization Phone</string>
+    <string name="organization_url">Organization URL</string>
+    <string name="url_base">http://</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="empty_string"></string>
+    <string name="authenticate">Authenticate</string>
+    <string name="sign_on">Sign On</string>
+    <string name="signature">Signature</string>
+    <string name="create_account_label">Create Account</string>
+    <string name="clear">Clear</string>
+    <string name="credential_provider_label">Credential Provider:</string>
+    <string name="url_address_label">URL Address:</string>
+    <string name="authentication_code_label">Authentication Code:</string>
+    <string name="verification_code_label">Verification Code:</string>
+    <string name="request_for_personal_data">Request for Personal Data</string>
+    <string name="personal_data_instruction_one">The website below is requesting your personal data to create a secure credential.</string>
+    <string name="personal_data_instruction_two">Select the personal information you wish to share.</string>
+    <string name="personal_data_instruction_three">Your screen name and contact email address will automatically be sent.</string>
+    <string name="personal_data_instruction_four">You can always modify your profile by touching the menu button above.</string>
+    <string name="first_name_last_name">First Name / Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="create">Create</string>
+    <string name="invalid_authentication_code">Invalid authentication code.</string>
+    <string name="account_exists">Account already exists.  Scroll down.</string>
+    <string name="invalid_credential_download_code">Invalid credential download code.</string>
+    <string name="problem_with_authentication_server">Problem with authentication server.</string>
+    <string name="problem_with_transaction_server">Problem with transaction server.</string>
+    <string name="problem_retrieving_credential_provider">Problem retrieving credential provider.</string>
+    <string name="problem_retrieving_credential_icon">Problem retrieving credential icon.</string>
+    <string name="problem_retrieving_credential_type">Problem retrieving credential type.</string>
+    <string name="problem_retrieving_credential_uuid">Problem retrieving credential UUID.</string>
+    <string name="problem_retrieving_transaction_uuid">Problem retrieving transaction UUID.</string>
+    <string name="problem_retrieving_response">Problem retrieving response.</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="provider_name_vale_pairs_invalid">Provider name value pairs invalid.</string>
+    <string name="touch_authenticate">Touch \"Authenticate\" to continue.</string>
+    <string name="authenticating">Authenticating&#8230;</string>
+    <string name="finding_credential_provider">Finding Credential Provider&#8230;</string>
+    <string name="finding_credential_icon">Finding Credential Icon&#8230;</string>
+    <string name="retrieving_public_key">Retrieving Public Key&#8230;</string>
+    <string name="retrieving_cryptographic_data">Retrieving Cryptographic Data&#8230;</string>
+    <string name="retrieving_transaction_uuid">Retrieving Transaction UUID&#8230;</string>
+    <string name="retrieve_unsigned_distributed_ledger">Retrieve Unsigned Distributed Ledger&#8230;</string>
+    <string name="return_signed_distributed_ledger">Return Signed Distributed Ledger&#8230;</string>
+    <string name="creating_credential">Creating credential&#8230;</string>
+    <string name="credential_created">Credential successfully created.</string>
+    <string name="network_unavailable">Network unavailable.</string>
+    <string name="activate_message">Enter password then touch "Activate".</string>
+    <string name="email_not_valid">Email not valid.</string>
+    <string name="password">Password</string>
+    <string name="verify_password">Verify Password</string>
+    <string name="enter_password">Enter a password with at least six characters, numbers or symbols.</string>
+    <string name="password_not_valid">Enter a password with at least six characters, numbers or symbols.</string>
+    <string name="password_verification_failed">The paswords did not match.</string>
+    <string name="profile_updated">Profile successfully updated.</string>
+    <string name="touch_menu_button">Touch the menu button for more options.</string>
+    <string name="display_only">This credential is for display purposes only.  Many different types of authentication and financial credentials can be added to the WebAuthn+ mobile app.
+                                \n\nYou can remove the demo credentials by going to \"About TNX\" from the Options menu.</string>
+    <string name="coming_soon_secure_access">Coming Soon! The TNX WebAuthn+ mobile app will provide secure access to other mobile apps.</string>
+
+    <string name="delete_credential">Delete Credential</string>
+    <string name="keep_credential">Keep Credential</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes!</string>
+    <string name="no">No!</string>
+    <string name="add">Add</string>
+    <string name="download">Download</string>
+    <string name="list">List</string>
+    <string name="edit_credential">Edit</string>
+    <string name="thank_you">Thank you </string>
+    <string name="welcome">Welcome </string>
+
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="initializing">Initializing&#8230; This may take several seconds.</string>
+    <string name="creating_public_key">Creating public/private key pair&#8230; This may take several seconds.</string>
+    <string name="updating">Updating&#8230; This may take several seconds.</string>
+    <string name="signingOn">Signing on&#8230; This may take a few seconds.</string>
+    <string name="deleting_credential">Deleting credential&#8230; This may take a few seconds.</string>
+    <string name="sending_funds">Sending Funds&#8230; This may take a few seconds.</string>
+    <string name="receiving_funds">Receiving Funds&#8230; This may take a few seconds.</string>
+    <string name="accepting_funds">Accepting Funds&#8230; This may take a few seconds.</string>
+
+    <string name="message_integrity_compromised">Message integrity compromised.</string>
+    <string name="firebase_message_integrity_compromised">Firebase message integrity compromised.</string>
+
+    <string name="eula_update"></string>
+
+    <string name="eula">
+        License Highlights
+        \n
+        \nThe key restriction of the license is that the source code can only be reposted to a public repository if the copyright and license notice is maintained in each and every file.
+        \n
+        \nOur technology is completely FREE for every publicly facing website for general user authentication.  There is a licensing fee for corporations and government agencies for internal authentication (e.g., free for banking customers; a small annual fee for banking employees).
+        \n
+        \nOur technology is completely FREE for any business organization with less than 1,000 employees.
+        \n
+        \nOur technology is completely FREE for all colleges and universities.  We hope that our open source project will be used in teaching.
+        \n
+        \nOur technology for encrypting data on a mobile device is completely FREE for everyone.  Everyone who cares about secure data on mobile devices should implement our technology.
+        \n
+        \nThe only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each uesr of the service).
+        \n
+        \nThe license allows resellers to integrate WebAuthn+ into customized solutions (with source code as long as the copyright and license notice is maintained).  Resellers must act as agents and collect the license fees.
+        \n
+        \nYou are not required to give modifications back to the project, although (of course) quality modifications are welcome.
+        \n
+        \nThe cost of an annual user license is 1 IVY Unit, 1/1,000 of an ounce of gold (currently about $1.51 USD).
+        \n
+        \nWe plan to create a program that will compensate core developers who contribute to the open source effort.
+        \n
+        \nLicense Details
+        \n
+        \nPLEASE READ THIS END USER LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE CLICKING THE "ACCEPT" BUTTON OR DOWNLOADING OR USING THE TNX WEBAUTHN+ MOBILE/WEB APPLICATION ("APPLICATION") ACCOMPANYING THIS LICENSE.
+        \n
+        \nBY CLICKING THE "ACCEPT" BUTTON OR DOWNLOADING OR USING THE APPLICATION, YOU ARE ENTERING INTO AND AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE.
+        \n
+        \nIF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO NOT CLICK THE "ACCEPT" BUTTON OR DOWNLOAD OR USE THE APPLICATION.
+        \n
+        \n1. General. The Application is licensed, not sold, to You by The Trust Nexus (the "Company") for use strictly in accordance with the terms and conditions of this License. The term "Application" shall refer to and consist of the following: (i) the mobile and web software applications accompanying this License, including, without limitation, any software code, scripts, interfaces, graphics, displays, text, documentation and other components; (ii) any updates, modifications or enhancements to the items listed in subsection (i); and (iii) any specific website the Application directs you to via any process located on a mobile phone or such other mobile device ("Mobile Device").
+        \n
+        \n2. License Grant and Restrictions on Use.
+        \n
+        \n2.1 License Grant. Company grants You a revocable, non-exclusive, non-transferable, limited right to install and use the Application on multiple Mobile Devices and multiple web servers, and to access and use the Application strictly in accordance with the terms and conditions of this License, the Usage Rules and any service agreements associated with your Mobile Device (collectively "Related Agreements").
+        \n
+        \n2.2 Restrictions on Use. You shall use the Application strictly in accordance with the terms of the Related Agreements and shall not:
+        \n
+        \n(a) repost the source code to a public or widely distributed repository without maintaining the copyright and license notice in each and every file.;
+        \n
+        \n(b) violate any applicable laws, rules or regulations in connection with Your access or use of the Application;
+        \n
+        \n(c) remove, alter or obscure any proprietary notice (including any notice of copyright, license or trademark) of Company or its affiliates, partners, suppliers or the licensors of the Application;
+        \n
+        \n(c) utilize and/or distribute the application or a dervived version without collecting and paying specified license fees;
+        \n
+        \n3. Intellectual Property Rights.
+        \n
+        \n3.1 Rights to Application. You acknowledge and agree that the Application and all copyrights, patents, trademarks, trade secrets and other intellectual property rights associated therewith are, and shall remain, the property of Company. Furthermore, You acknowledge and agree that the source and object code of the Applications and the format, directories, queries, algorithms, structure and organization of the Application are the intellectual property and proprietary and confidential information of Company and its affiliates, licensors and suppliers. Except as expressly stated in this License, You are not granted any intellectual property rights in or to the Application by implication, estoppel or other legal theory, and all rights in and to the Application not expressly granted in this License are hereby reserved and retained by Company.
+        \n
+        \n3.2 Third Party Software. The Application may utilize or include third party software that is subject to open source and third party license terms ("Third Party Software"). You acknowledge and agree that Your right to use such Third Party Software as part of the Application is subject to and governed by the terms and conditions of the open source or third party license applicable to such Third Party Software, including, without limitation, any applicable acknowledgements, license terms and disclaimers contained therein. In the event of a conflict between the terms of this License and the terms of such open source or third party licenses, the terms of the open source or third party licenses shall control with regard to Your use of the relevant Third Party Software.
+        \n
+        \n3.3 Company\'s Marks. You are not authorized to use the Company trademarks in any advertising, publicity or in any other commercial manner without the prior written consent of Company, which may be withheld for any or no reason.
+        \n
+        \n3.4 Infringement Acknowledgement. You and Company acknowledge and agree that, in the event of a third party claim that the Application or Your possession or use of the Application infringes any third party\'s intellectual property rights, You will promptly notify Company in writing of such a claim.
+        \n
+        \n4. Restriction on Transfer. You may not rent, lease, lend, sublicense or transfer the Application, this License or any of the rights granted hereunder without collecting or paying specified license fees. Any attempted transfer in contravention of this provision shall be null and void and of no force or effect.
+        \n
+        \n5. License Fees. Any organization utilizing the Application is required to pay license fees.
+        \n
+        \n5.1 The Application is completely FREE for every publicly facing website for general user authentication. There will be licensing fees for corporations and government agencies for internal authentication (e.g., free for banking customers; a small annual fee for banking employees).
+        \n
+        \n5.2 The Application is completely FREE for any business organization with less than 1,000 employees.
+        \n
+        \n5.3 The Application is completely FREE for all colleges and universities. We hope that our open source project will be used in teaching.
+        \n
+        \n5.4 Our technology for encrypting data on a mobile device is completely FREE for everyone. Everyone who cares about secure data on mobile devices should implement our technology.
+        \n
+        \n5.5 The only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each uesr of the service).
+        \n
+        \n5.6 An IVY Unit is a cryptographic token backed by 1/1,000 of an ounce of gold (currently about $1.51 USD).
+        \n
+        \n5.7 The cost of an annual user license is one IVY Unit, currently about $1.51 USD (that is a little more than twelve cents per internal user per month). So if a federal agency with 10,000 employees (and millions of external users) licenses the platform, the annual license cost would be $15,100.
+        \n
+        \n5.8 There is an organizational cap on the license cost: 100,000 IVY Units. If a major bank with 250,000 employees (and millions of external users) licenses the platform, the annual cost would be $151,000 (about the cost of one good software developer).
+        \n
+        \n5.9 This license allows resellers to integrate WebAuthn+ into customized solutions. Resellers must act as agents and collect the license fees.
+        \n
+        \n5.10 Any organization or government agency using the technology of the Trust Nexus for fiancial transactions or funds transfers must pay an annual license fee of one IVY Unit, currently about $1.51 USD, for each one million dollars in transactions/transfers ($1.51/$1,000,000 = 0.00000151  or 0.0151 BPS  or 1.51 cents per $10,000); this rate is thousands of times lower than the current fees for financial transactions or funds transfers.  For currencies other than the USD, corresponding fees based on current exchange rates will apply.
+        \n
+        \n6. Term and Termination.
+        \n
+        \n6.1 Term. This License shall be effective in perpetuity.
+        \n
+        \n6.2 Termination. Once granted it may never be revoked or modified if the licensee complies with the license and terms of payment. If You fail to comply with any terms and conditions of this License, then this License and any rights afforded to You here under shall terminate automatically, without any notice or other action by Company. Upon the termination of this License, You shall cease all use of the Application and uninstall the Application.
+        \n
+        \n7. Disclaimer of Warranties. YOU ACKNOWLEDGE AND AGREE THAT THE APPLICATION IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, AND THAT YOUR USE OF OR RELIANCE UPON THE APPLICATION AND ANY THIRD PARTY CONTENT AND SERVICES ACCESSED THEREBY IS AT YOUR SOLE RISK AND DISCRETION. COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS HEREBY DISCLAIM ANY AND ALL REPRSENTATIONS, WARRANTIES AND GUARANTIES REGARDING THE APPLICATION AND THIRD PARTY CONTENT AND SERVICES, WHETHER EXPRESS, IMPLIED OR STATUTORY, AND INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. FURTHERMORE, COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS MAKE NO WARRANTY THAT (I) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL MEET YOUR REQUIREMENTS; (II) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL BE UNINTERRUPED, ACCURATE, RELIABLE, TIMELY, SECURE OR ERROR-FREE; (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION OR OTHER MATERIAL ACCESSED OR OBTAINED BY YOU THROUGH THE APPLICATION WILL BE AS REPRESENTED OR MEET YOUR EXPECTATIONS; OR (IV) ANY ERRORS IN THE APPLICATION OR THIRD PARTY CONENT AND SERVICES WILL BE CORRECTED. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM COMPANY OR FROM THE APPLICATION SHALL CREATE ANY REPRESENTATION, WARRANTY OR GUARANTY. FURTHERMORE, YOU ACKNOWLEDGE THAT COMPANY HAVE NO OBLIGATION TO CORRECT ANY ERRORS OR OTHERWISE SUPPORT OR MAINTAIN THE APPLICATION.
+        \n
+        \n8. Limitation of Liability. UNDER NO CIRCUMSTANCES SHALL COMPANY OR ITS AFFILIATES, PARTNERS, SUPPLIERS OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS OR USE OF OR INABILITY TO ACCESS OR USE THE APPLICATION AND ANY THIRD PARTY CONTENT AND SERVICES, WHETHER OR NOT THE DAMAGES WERE FORESEEABLE AND WHETHER OR NOT COMPANY WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, COMPANY\'S AGGREGATE LIABILITY TO YOU (WHETHER UNDER CONTRACT, TORT, STATUTE OR OTHERWISE) SHALL NOT EXCEED THE AMOUNT OF FIFTY DOLLARS ($50.00). THE FOREGOING LIMITATIONS WILL APPLY EVEN IF THE ABOVE STATED REMEDY FAILS OF ITS ESSENTIAL PURPOSE.
+        \n
+        \n8.1 Source Code. THE SOURCE CODE IS AVAILABLE. STUDY IT AND USE IT AT YOUR OWN RISK.
+        \n
+        \n9. Indemnification. You shall indemnify, defend and hold harmless Company and its affiliates, partners, suppliers and licensors, and each of their respective officers, directors, agents and employees (the "Indemnified Parties") from and against any claim, proceeding, loss, damage, fine, penalty, interest and expense (including, without limitation, fees for attorneys and other professional advisors) arising out of or in connection with the following: (i) Your access to or use of the Application or Third Party Content and Services; (ii) Your breach of this License; (iii) Your violation of law; (iv) Your negligence or willful misconduct; or (v) Your violation of the rights of a third party, including the infringement by You of any intellectual property or misappropriation of any proprietary right or trade secret of any person or entity. These obligations will survive any termination of the License.
+        \n
+        \n10. Compatibility. Company does not warrant that the Application will be compatible or interoperable with Your Mobile Device or any other piece of hardware, software, equipment or device installed on or used in connection with your Mobile Device. Furthermore, You acknowledge that compatibility and interoperability problems can cause the performance of your Mobile Device to diminish or fail completely, and may result in permanent the damage to Your Mobile Device, loss of the data located on Your Mobile Device, and corruption of the software and files located on Your Mobile Device. You acknowledge and agree that Company and its affiliates, partners, suppliers and licensors shall have no liability to You for any losses suffered resulting from or arising in connection with compatibility or interoperability problems.
+        \n
+        \n11. Product Claims. You acknowledge that You (not Company) are responsible for addressing any third party claims relating to Your use or possession of the Application, and agree to notify Company of any third party claims relating to the Application of which You become aware. Furthermore, You hereby release Company from any liability resulting from Your use or possession of the Application, including, without limitation, the following: (i) any product liability claims; (ii) any claim that the Application fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection or similar legislation.
+        \n
+        \n12. Miscellaneous.
+        \n
+        \n12.1 Governing Law. This License shall be deemed to take place in the State of Texas and shall be governed by and construed in accordance with the laws of the State of Texas, excluding its conflicts of law principles. Any disputes arising from this License shall be adjudicated in the courts of Travis county, TX. This License shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. The Company shall have the right to settle any legal claims prior to adjudication for a ammount of fifty dollars ($50).
+        \n
+        \n12.2 Severability. If any provision of this License is held to be invalid or unenforceable with respect to a party, the remainder of this License, or the application of such provision to persons other than those to whom it is held invalid or unenforceable shall not be affected and each remaining provision of this License shall be valid and enforceable to the fullest extent permitted by law.
+        \n
+        \n12.3 Waiver. Except as provided herein, the failure to exercise a right or require performance of an obligation under this License shall not effect a party\'s ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute waiver of any subsequent breach.
+        \n
+        \n12.4 Export Control. You may not use or otherwise export or re-export the Application except as authorized by United States law and the laws of the jurisdiction(s) in which the Application was obtained. You represent and warrant that You are not (x) located in any country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country, or (y) listed on any U.S. U.S. Government list of prohibited or restricted parties including the Treasury Department\'s list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person\'s List or Entity List. You also agree that You will not use the Application for any purposes prohibited by United States law.
+        \n
+        \n12.5 Survival. All sections of this License and any other provisions of this License which by their express language or by their context are intended to survive the termination of this License shall survive such termination.
+        \n
+        \n12.7 Assignment. You shall not assign this License or any rights or obligations herein without the prior written consent of COMPANY and any attempted assignment in contravention of this provision shall be null and void and of no force or effect.
+        \n
+        \n12.8 Entire Agreement. This License including the documents incorporated herein by reference constitute the entire agreement with respect to the use of the Application licensed here under and supersedes all prior or contemporaneous understandings regarding such subject matter.
+        \n
+        \nIf you feel any of th terms of this license are unfair, not clear or inaccurate, please contact us:  trustnexus.io@austin.rr.com
+        \n
+        \n
+    </string>
+
+    <string name="status_devicesConnected">Device Connected</string>
+    <string name="status_errorWhenConnecting">Error when connecting</string>
+
+</resources>

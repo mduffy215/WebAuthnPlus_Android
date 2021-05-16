@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="RtlHardcoded,ButtonStyle,TooManyViews" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_marginTop="6dp"
+        android:background="@color/bar_color" >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_gradient" >
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/emphasis_color"
+            android:textSize="@dimen/font_size_text"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/mobile_phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display_name"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="0dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_text"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_phone_number"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="0dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_text"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_marginTop="4dp"
+        android:background="@color/bar_color" >
+    </View>
+
+</LinearLayout>
