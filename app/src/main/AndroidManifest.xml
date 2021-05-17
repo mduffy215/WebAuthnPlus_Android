@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tnxsecure.webauthnplus" >
+    package="io.trustnexus.webauthnplus" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
-        android:name="com.tnxsecure.webauthnplus.WebAuthnPlus"
+        android:name="io.trustnexus.webauthnplus.WebAuthnPlus"
         android:allowBackup="false"
         android:icon="@mipmap/ic_tnx_c"
         android:logo="@mipmap/ic_tnx_d"
@@ -19,7 +19,7 @@
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
-            android:name="com.tnxsecure.webauthnplus.ActivatePassword"
+            android:name="io.trustnexus.webauthnplus.ActivatePassword"
             android:label="@string/activity_label_activate" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,51 +36,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.AboutTnx"
+            android:name="io.trustnexus.webauthnplus.AboutTnx"
             android:label="@string/activity_label_about_tnx" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.Profile"
+            android:name="io.trustnexus.webauthnplus.Profile"
             android:label="@string/activity_label_profile" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.Credentials"
+            android:name="io.trustnexus.webauthnplus.Credentials"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/activity_label_credentials" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.PersonalData"
+            android:name="io.trustnexus.webauthnplus.PersonalData"
             android:label="@string/activity_label_personal_data" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.Contacts"
+            android:name="io.trustnexus.webauthnplus.Contacts"
             android:label="@string/activity_label_send_funds" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.fundstransfer.SendFunds"
+            android:name="io.trustnexus.webauthnplus.fundstransfer.SendFunds"
             android:label="@string/activity_label_send_funds" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.fundstransfer.ReceiveFunds"
+            android:name="io.trustnexus.webauthnplus.fundstransfer.ReceiveFunds"
             android:label="@string/activity_label_receive_funds" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.fundstransfer.ConfirmFunds"
+            android:name="io.trustnexus.webauthnplus.fundstransfer.ConfirmFunds"
             android:label="@string/activity_label_confirm_funds" >
         </activity>
         <activity
-            android:name="com.tnxsecure.webauthnplus.distributedledger.Signature"
+            android:name="io.trustnexus.webauthnplus.distributedledger.Signature"
             android:label="@string/activity_label_dlt_signature" >
         </activity>
         <activity android:name=".ActivityBase"/>
         <activity android:name=".ListActivityBase"/>
 
-        <service android:name="com.tnxsecure.webauthnplus.firebase.TnxFirebaseMessagingService">
+        <service android:name="io.trustnexus.webauthnplus.firebase.TnxFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <service android:name="com.tnxsecure.webauthnplus.firebase.TnxFirebaseInstanceIDService">
+        <service android:name="io.trustnexus.webauthnplus.firebase.TnxFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>

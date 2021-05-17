@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:806672998807:android:b9160212c9370d25",
         "android_client_info": {
-          "package_name": "com.tnxsecure.webauthnplus"
+          "package_name": "io.trustnexus.webauthnplus"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "806672998807-koalhdjcpbu0dulqq78c3s9bsgvbn9c0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.tnxsecure.webauthnplus",
+            "package_name": "io.trustnexus.webauthnplus",
             "certificate_hash": "f97d7a67498e2f9a204d14d9ac6ad1c0eb3d55de"
           }
         },
