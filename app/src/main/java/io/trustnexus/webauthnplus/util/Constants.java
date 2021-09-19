@@ -11,6 +11,14 @@ public class Constants {
    *
    * As long as the mobile app is distributed in a secure process, providing the public key within the app and securing
    * the private key on your server should work fine.
+   *
+   * In this prototype application we are going to store our private keys in the data base.
+   * This is NOT a good idea for a production level application.
+   * Some good suggestions can be found here:
+   * https://security.stackexchange.com/questions/12332/where-to-store-a-server-side-encryption-key
+   *
+   * If the keys for the MOBILE_APP_PROVIDER_KEY_OWNER are ever compromised new keys will need to be issued by
+   * creating a new version of the TNX Secure Mobile application and requiring all users to upgrade.
    */
   public static final String MOBILE_APP_PROVIDER_PUBLIC_KEY = "30820222300D06092A864886F70D01010105000382020F003082020A0282020100C0B0E648866A26FE08ADE6B335A355" +
           "70384DC5F24DDCD9A82E0AED54CAD55304A3F69E061994081199B4FBB8C3ED76C5945E6C79BBF0BBFB89C2549BF233A8DCD9C535FE8802340256118F3BAADE65CF8CE49B96FD128EF8F8" +
