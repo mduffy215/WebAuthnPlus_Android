@@ -1,3 +1,14 @@
+/*
+ * (c) Copyright 2022 ~ Trust Nexus, Inc.
+ * All technologies described here in are "Patent Pending".
+ * License information:  http://www.trustnexus.io/license.htm
+ *
+ * AS LONG AS THIS NOTICE IS MAINTAINED THE LICENSE PERMITS REDISTRIBUTION OR RE-POSTING
+ * OF THIS SOURCE CODE TO A PUBLIC REPOSITORY (WITH OR WITHOUT MODIFICATIONS)!
+ *
+ * Report License Violations:  trustnexus.io@austin.rr.com
+ */
+
 package io.trustnexus.webauthnplus.util;
 
 import android.text.Editable;

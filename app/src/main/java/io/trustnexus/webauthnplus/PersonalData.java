@@ -1,5 +1,5 @@
 /*
- * (c) Copyright 2021 ~ Trust Nexus, Inc.
+ * (c) Copyright 2022 ~ Trust Nexus, Inc.
  * All technologies described here in are "Patent Pending".
  * License information:  http://www.trustnexus.io/license.htm
  *
@@ -34,12 +34,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import io.trustnexus.webauthnplus.util.Constants;
-import io.trustnexus.webauthnplus.util.CryptoUtilities;
-import io.trustnexus.webauthnplus.util.Utilities;
-
-import io.trustnexus.webauthnplus.R;
-
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.DataOutputStream;
@@ -49,6 +43,10 @@ import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.security.PrivateKey;
+
+import io.trustnexus.webauthnplus.util.Constants;
+import io.trustnexus.webauthnplus.util.CryptoUtilities;
+import io.trustnexus.webauthnplus.util.Utilities;
 
 public class PersonalData extends ActivityBase implements OnClickListener {
 
