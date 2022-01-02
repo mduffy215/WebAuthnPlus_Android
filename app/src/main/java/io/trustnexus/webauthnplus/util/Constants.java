@@ -210,4 +210,5 @@ public class Constants {
   public static final String RECIPIENT_SIGNED_HASH = "recipientSignedHash";
 
   public static final String SENDING_BANK_NAME = "sendingBankName";
+  public static final String TEST_CHANGE_GIT_HUB = "test change";
 }
