@@ -99,11 +99,12 @@
     <string name="bluetooth_instructions">"Pair" your mobile device from the pairing screen in your browser.</string>
     <string name="bluetooth_pairing_successful">Bluetooth pairing successful.</string>
     <string name="domain_name_confirmed">Domain name confirmed: </string>
+    <string name="domain_name_not_confirmed">Domain name NOT confirmed: </string>
     <string name="signature_instructions">Verify the authentication code then touch \"Signature\".</string>
     <string name="overview_credential">You can sign onto your web applications or make a payment by simply touching the associated icon from the list below.</string>
     <string name="scroll_view">As you add more credentials to this digital wallet, they will be displayed in the scroll view below.</string>
     <string name="contacts_message">Touch a record from the following list to send funds to that contact.  The contact must have both a phone number and an email address.</string>
-    <string name="transfer_funds_message">Simply touch a financial credntial below to send funds to someone in your contacts.</string>
+    <string name="transfer_funds_message">Simply touch a financial credential below to send funds to someone in your contacts.</string>
     <string name="funds_transfer_message">This is a test.  All values are test values.</string>
     <string name="funds_transfer_retrieving_data">Retrieving funds transfer data.</string>
     <string name="funds_transfer_accept_cancel">Touch \"Accept\" or \"Cancel\".</string>
@@ -116,7 +117,7 @@
     <string name="preferences">Preferences</string>
     <string name="profile">Profile</string>
     <string name="exit_name">Exit</string>
-    <string name="astericks">*** </string>
+    <string name="asterisks">*** </string>
     <string name="required">Required</string>
     <string name="optional">Optional Settings</string>
     <string name="screen_name">Screen Name</string>
@@ -189,7 +190,7 @@
     <string name="verify_password">Verify Password</string>
     <string name="enter_password">Enter a password with at least six characters, numbers or symbols.</string>
     <string name="password_not_valid">Enter a password with at least six characters, numbers or symbols.</string>
-    <string name="password_verification_failed">The paswords did not match.</string>
+    <string name="password_verification_failed">The passwords did not match.</string>
     <string name="profile_updated">Profile successfully updated.</string>
     <string name="touch_menu_button">Touch the menu button for more options.</string>
     <string name="display_only">This credential is for display purposes only.  Many different types of authentication and financial credentials can be added to the WebAuthn+ mobile app.
@@ -238,13 +239,13 @@
         \n
         \nOur technology for encrypting data on a mobile device is completely FREE for everyone.  Everyone who cares about secure data on mobile devices should implement our technology.
         \n
-        \nThe only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each uesr of the service).
+        \nThe only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each user of the service).
         \n
         \nThe license allows resellers to integrate WebAuthn+ into customized solutions (with source code as long as the copyright and license notice is maintained).  Resellers must act as agents and collect the license fees.
         \n
         \nYou are not required to give modifications back to the project, although (of course) quality modifications are welcome.
         \n
-        \nThe cost of an annual user license is 1 IVY Unit, 1/1,000 of an ounce of gold (currently about $1.51 USD).
+        \nThe cost of an annual user license is 1 IVY Unit, 1/1,000 of an ounce of gold (currently about $1.88 USD).
         \n
         \nWe plan to create a program that will compensate core developers who contribute to the open source effort.
         \n
@@ -270,7 +271,7 @@
         \n
         \n(c) remove, alter or obscure any proprietary notice (including any notice of copyright, license or trademark) of Company or its affiliates, partners, suppliers or the licensors of the Application;
         \n
-        \n(c) utilize and/or distribute the application or a dervived version without collecting and paying specified license fees;
+        \n(c) utilize and/or distribute the application or a derived version without collecting and paying specified license fees;
         \n
         \n3. Intellectual Property Rights.
         \n
@@ -294,25 +295,25 @@
         \n
         \n5.4 Our technology for encrypting data on a mobile device is completely FREE for everyone. Everyone who cares about secure data on mobile devices should implement our technology.
         \n
-        \n5.5 The only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each uesr of the service).
+        \n5.5 The only organizations that are required to pay a license fee are business organizations with 1,000 or more employees, government agencies and organizations running an authentication service (the annual license fee must be paid for each user of the service).
         \n
-        \n5.6 An IVY Unit is a cryptographic token backed by 1/1,000 of an ounce of gold (currently about $1.51 USD).
+        \n5.6 An IVY Unit is a cryptographic token backed by 1/1,000 of an ounce of gold (currently about $1.88 USD).
         \n
-        \n5.7 The cost of an annual user license is one IVY Unit, currently about $1.51 USD (that is a little more than twelve cents per internal user per month). So if a federal agency with 10,000 employees (and millions of external users) licenses the platform, the annual license cost would be $15,100.
+        \n5.7 The cost of an annual user license is one IVY Unit, currently about $1.88 USD (that is a little less than sixteen cents per internal user per month). So if a federal agency with 10,000 employees (and millions of external users) licenses the platform, the annual license cost would be $18,800.
         \n
-        \n5.8 There is an organizational cap on the license cost: 100,000 IVY Units. If a major bank with 250,000 employees (and millions of external users) licenses the platform, the annual cost would be $151,000 (about the cost of one good software developer).
+        \n5.8 There is an organizational cap on the license cost: 100,000 IVY Units. If a major bank with 250,000 employees (and millions of external users) licenses the platform, the annual cost would be $188,000 (about the cost of one good software developer).
         \n
         \n5.9 This license allows resellers to integrate WebAuthn+ into customized solutions. Resellers must act as agents and collect the license fees.
         \n
-        \n5.10 Any organization or government agency using the technology of the Trust Nexus for fiancial transactions or funds transfers must pay an annual license fee of one IVY Unit, currently about $1.51 USD, for each one million dollars in transactions/transfers ($1.51/$1,000,000 = 0.00000151  or 0.0151 BPS  or 1.51 cents per $10,000); this rate is thousands of times lower than the current fees for financial transactions or funds transfers.  For currencies other than the USD, corresponding fees based on current exchange rates will apply.
+        \n5.10 Any organization or government agency using the technology of the Trust Nexus for financial transactions or funds transfers must pay an annual license fee of one IVY Unit, currently about $1.88 USD, for each one million dollars in transactions/transfers ($1.88/$1,000,000 = 0.00000188  or 0.0188 BPS  or 1.88 cents per $10,000); this rate is thousands of times lower than the current fees for financial transactions or funds transfers.  For currencies other than the USD, corresponding fees based on current exchange rates will apply.
         \n
         \n6. Term and Termination.
         \n
         \n6.1 Term. This License shall be effective in perpetuity.
         \n
-        \n6.2 Termination. Once granted it may never be revoked or modified if the licensee complies with the license and terms of payment. If You fail to comply with any terms and conditions of this License, then this License and any rights afforded to You here under shall terminate automatically, without any notice or other action by Company. Upon the termination of this License, You shall cease all use of the Application and uninstall the Application.
+        \n6.2 Termination. Once granted the financial terms of the license may never be revoked if the licensee complies with the license and terms of payment. If You fail to comply with any terms and conditions of this License, then this License and any rights afforded to You here under shall terminate automatically, without any notice or other action by Company. Upon the termination of this License, You shall cease all use of the Application and uninstall the Application.
         \n
-        \n7. Disclaimer of Warranties. YOU ACKNOWLEDGE AND AGREE THAT THE APPLICATION IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, AND THAT YOUR USE OF OR RELIANCE UPON THE APPLICATION AND ANY THIRD PARTY CONTENT AND SERVICES ACCESSED THEREBY IS AT YOUR SOLE RISK AND DISCRETION. COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS HEREBY DISCLAIM ANY AND ALL REPRSENTATIONS, WARRANTIES AND GUARANTIES REGARDING THE APPLICATION AND THIRD PARTY CONTENT AND SERVICES, WHETHER EXPRESS, IMPLIED OR STATUTORY, AND INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. FURTHERMORE, COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS MAKE NO WARRANTY THAT (I) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL MEET YOUR REQUIREMENTS; (II) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL BE UNINTERRUPED, ACCURATE, RELIABLE, TIMELY, SECURE OR ERROR-FREE; (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION OR OTHER MATERIAL ACCESSED OR OBTAINED BY YOU THROUGH THE APPLICATION WILL BE AS REPRESENTED OR MEET YOUR EXPECTATIONS; OR (IV) ANY ERRORS IN THE APPLICATION OR THIRD PARTY CONENT AND SERVICES WILL BE CORRECTED. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM COMPANY OR FROM THE APPLICATION SHALL CREATE ANY REPRESENTATION, WARRANTY OR GUARANTY. FURTHERMORE, YOU ACKNOWLEDGE THAT COMPANY HAVE NO OBLIGATION TO CORRECT ANY ERRORS OR OTHERWISE SUPPORT OR MAINTAIN THE APPLICATION.
+        \n7. Disclaimer of Warranties. YOU ACKNOWLEDGE AND AGREE THAT THE APPLICATION IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, AND THAT YOUR USE OF OR RELIANCE UPON THE APPLICATION AND ANY THIRD PARTY CONTENT AND SERVICES ACCESSED THEREBY IS AT YOUR SOLE RISK AND DISCRETION. COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS HEREBY DISCLAIM ANY AND ALL REPRESENTATIONS, WARRANTIES AND GUARANTIES REGARDING THE APPLICATION AND THIRD PARTY CONTENT AND SERVICES, WHETHER EXPRESS, IMPLIED OR STATUTORY, AND INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. FURTHERMORE, COMPANY AND ITS AFFILIATES, PARTNERS, SUPPLIERS AND LICENSORS MAKE NO WARRANTY THAT (I) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL MEET YOUR REQUIREMENTS; (II) THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL BE UNINTERRUPTED, ACCURATE, RELIABLE, TIMELY, SECURE OR ERROR-FREE; (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION OR OTHER MATERIAL ACCESSED OR OBTAINED BY YOU THROUGH THE APPLICATION WILL BE AS REPRESENTED OR MEET YOUR EXPECTATIONS; OR (IV) ANY ERRORS IN THE APPLICATION OR THIRD PARTY CONTENT AND SERVICES WILL BE CORRECTED. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM COMPANY OR FROM THE APPLICATION SHALL CREATE ANY REPRESENTATION, WARRANTY OR GUARANTY. FURTHERMORE, YOU ACKNOWLEDGE THAT COMPANY HAVE NO OBLIGATION TO CORRECT ANY ERRORS OR OTHERWISE SUPPORT OR MAINTAIN THE APPLICATION.
         \n
         \n8. Limitation of Liability. UNDER NO CIRCUMSTANCES SHALL COMPANY OR ITS AFFILIATES, PARTNERS, SUPPLIERS OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS OR USE OF OR INABILITY TO ACCESS OR USE THE APPLICATION AND ANY THIRD PARTY CONTENT AND SERVICES, WHETHER OR NOT THE DAMAGES WERE FORESEEABLE AND WHETHER OR NOT COMPANY WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, COMPANY\'S AGGREGATE LIABILITY TO YOU (WHETHER UNDER CONTRACT, TORT, STATUTE OR OTHERWISE) SHALL NOT EXCEED THE AMOUNT OF FIFTY DOLLARS ($50.00). THE FOREGOING LIMITATIONS WILL APPLY EVEN IF THE ABOVE STATED REMEDY FAILS OF ITS ESSENTIAL PURPOSE.
         \n
@@ -326,7 +327,7 @@
         \n
         \n12. Miscellaneous.
         \n
-        \n12.1 Governing Law. This License shall be deemed to take place in the State of Texas and shall be governed by and construed in accordance with the laws of the State of Texas, excluding its conflicts of law principles. Any disputes arising from this License shall be adjudicated in the courts of Travis county, TX. This License shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. The Company shall have the right to settle any legal claims prior to adjudication for a ammount of fifty dollars ($50).
+        \n12.1 Governing Law. This License shall be deemed to take place in the State of Texas and shall be governed by and construed in accordance with the laws of the State of Texas, excluding its conflicts of law principles. Any disputes arising from this License shall be adjudicated in the courts of Travis county, TX. This License shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. The Company shall have the right to settle any legal claims prior to adjudication for a amount of fifty dollars ($50).
         \n
         \n12.2 Severability. If any provision of this License is held to be invalid or unenforceable with respect to a party, the remainder of this License, or the application of such provision to persons other than those to whom it is held invalid or unenforceable shall not be affected and each remaining provision of this License shall be valid and enforceable to the fullest extent permitted by law.
         \n

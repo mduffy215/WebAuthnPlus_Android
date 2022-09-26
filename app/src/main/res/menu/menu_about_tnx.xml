@@ -1,7 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools"
-      tools:context="io.trustnexus.webauthnplus.com.tnxsecure.webauthnplus.AboutTnx">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="io.trustnexus.webauthnplusb.com.tnxsecure.webauthnplus.AboutTnx">
 
       <item
           android:id="@+id/activate_password"

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="io.trustnexus.webauthnplus.com.tnxsecure.webauthnplus.PersonalData">
+      tools:context="io.trustnexus.webauthnplusb.com.tnxsecure.webauthnplus.PersonalData">
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           android:orderInCategory="100"
