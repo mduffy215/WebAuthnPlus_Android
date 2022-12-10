@@ -8,8 +8,8 @@ android {
         applicationId "io.trustnexus.webauthnplusb"
         minSdkVersion 24
         targetSdkVersion 32
-        versionCode 29
-        versionName "1.29"
+        versionCode 30
+        versionName "1.30"
     }
     buildTypes {
         release {

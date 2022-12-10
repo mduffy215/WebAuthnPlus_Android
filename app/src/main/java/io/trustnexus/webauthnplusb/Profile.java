@@ -992,7 +992,10 @@ public class Profile extends ActivityBase implements OnClickListener, OnItemSele
 
                     bufferedReader.close();
 
-                    return CryptoUtilities.decryptResponseString(response.toString().trim(), transferKeyHex, profile);
+                    String result = CryptoUtilities.decryptResponseString(response.toString().trim(), transferKeyHex, profile);
+                    log("ProcessCreateUser result: " + result);
+
+                    return result;
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -1086,6 +1089,7 @@ public class Profile extends ActivityBase implements OnClickListener, OnItemSele
          * https://stackoverflow.com/questions/44309241/warning-this-asynctask-class-should-be-static-or-leaks-might-occur
          */
         private final WeakReference<Profile> activityReference;
+        private String[] urlStringsCreateUserPublicKey = new String[3];
 
         // only retain a weak reference to the activity
         ProcessCreateSecurityKey(Profile context) {
@@ -1141,7 +1145,166 @@ public class Profile extends ActivityBase implements OnClickListener, OnItemSele
 
                     bufferedReader.close();
 
-                    return CryptoUtilities.decryptResponseString(response.toString().trim(), transferKeyHex, profile);
+                    String result = CryptoUtilities.decryptResponseString(response.toString().trim(), transferKeyHex, profile);
+                    log("ProcessCreateSecurityKey result:  " + result);
+
+                    if (result.equals(Constants.SECURITY_KEY_CREATED)) {
+
+                        /*
+                         * Now that the userSecurityKeyHex has been created, encrypt the user's SharedPreferences values.
+                         */
+                        Editor prefEditor = profile.sharedPreferences.edit();
+
+                        // ------------------------------------------------------------------------------------------------------------
+
+                        String userUuid = profile.sharedPreferences.getString(profile.getString(R.string.user_uuid_key), profile.getString(R.string.empty_string));
+                        String userUuidEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, userUuid);
+                        prefEditor.putString(profile.getString(R.string.user_uuid_key), userUuidEncrypted);
+
+                        String firebaseDeviceId = profile.sharedPreferences.getString(profile.getString(R.string.firebase_device_id), profile.getString(R.string.empty_string));
+                        String firebaseDeviceIdEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, firebaseDeviceId);
+                        prefEditor.putString(profile.getString(R.string.firebase_device_id), firebaseDeviceIdEncrypted);
+
+                        // ------------------------------------------------------------------------------------------------------------
+
+                        String screenNameValue = profile.sharedPreferences.getString(profile.getString(R.string.screen_name_key), profile.getString(R.string.empty_string));
+                        String screenNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, screenNameValue);
+                        prefEditor.putString(profile.getString(R.string.screen_name_key), screenNameValueEncrypted);
+
+                        String emailValue = profile.sharedPreferences.getString(profile.getString(R.string.email_key), profile.getString(R.string.empty_string));
+                        String emailValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, emailValue);
+                        prefEditor.putString(profile.getString(R.string.email_key), emailValueEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String firstNameValue = profile.sharedPreferences.getString(profile.getString(R.string.first_name_key), profile.getString(R.string.empty_string));
+                        String firstNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, firstNameValue);
+                        prefEditor.putString(profile.getString(R.string.first_name_key), firstNameValueEncrypted);
+
+                        String lastNameValue = profile.sharedPreferences.getString(profile.getString(R.string.last_name_key), profile.getString(R.string.empty_string));
+                        String lastNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, lastNameValue);
+                        prefEditor.putString(profile.getString(R.string.last_name_key), lastNameValueEncrypted);
+
+                        String phoneValue = profile.sharedPreferences.getString(profile.getString(R.string.phone_key), profile.getString(R.string.empty_string));
+                        String phoneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, phoneValue);
+                        prefEditor.putString(profile.getString(R.string.phone_key), phoneValueEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String legalAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_line_one_key), profile.getString(R.string.empty_string));
+                        String legalAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalAddressLineOneValue);
+                        prefEditor.putString(profile.getString(R.string.legal_address_line_one_key), legalAddressLineOneValueEncrypted);
+
+                        String legalAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_line_two_key), profile.getString(R.string.empty_string));
+                        String legalAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalAddressLineTwoValue);
+                        prefEditor.putString(profile.getString(R.string.legal_address_line_two_key), legalAddressLineTwoValueEncrypted);
+
+                        String legalCityValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_city_key), profile.getString(R.string.empty_string));
+                        String legalCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalCityValue);
+                        prefEditor.putString(profile.getString(R.string.legal_address_city_key), legalCityValueEncrypted);
+
+                        String legalStateValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_state_key), profile.getString(R.string.empty_string));
+                        String legalStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalStateValue);
+                        prefEditor.putString(profile.getString(R.string.legal_address_state_key), legalStateValueEncrypted);
+
+                        String legalPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_postal_code_key), profile.getString(R.string.empty_string));
+                        String legalPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalPostalCodeValue);
+                        prefEditor.putString(profile.getString(R.string.legal_address_postal_code_key), legalPostalCodeValueEncrypted);
+
+                        String legalCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_country_key), profile.getString(R.string.empty_string));
+                        String legalCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalCountryValuePref);
+                        prefEditor.putString(profile.getString(R.string.legal_address_country_key), legalCountryValuePrefEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String mailingAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_line_one_key), profile.getString(R.string.empty_string));
+                        String mailingAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingAddressLineOneValue);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_line_one_key), mailingAddressLineOneValueEncrypted);
+
+                        String mailingAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_line_two_key), profile.getString(R.string.empty_string));
+                        String mailingAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingAddressLineTwoValue);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_line_two_key), mailingAddressLineTwoValueEncrypted);
+
+                        String mailingCityValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_city_key), profile.getString(R.string.empty_string));
+                        String mailingCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingCityValue);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_city_key), mailingCityValueEncrypted);
+
+                        String mailingStateValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_state_key), profile.getString(R.string.empty_string));
+                        String mailingStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingStateValue);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_state_key), mailingStateValueEncrypted);
+
+                        String mailingPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_postal_code_key), profile.getString(R.string.empty_string));
+                        String mailingPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingPostalCodeValue);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_postal_code_key), mailingPostalCodeValueEncrypted);
+
+                        String mailingCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_country_key), profile.getString(R.string.empty_string));
+                        String mailingCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingCountryValuePref);
+                        prefEditor.putString(profile.getString(R.string.mailing_address_country_key), mailingCountryValuePrefEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String organizationNameValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_name_key), profile.getString(R.string.empty_string));
+                        String organizationNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationNameValue);
+                        prefEditor.putString(profile.getString(R.string.organization_name_key), organizationNameValueEncrypted);
+
+                        String organizationUrlValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_url_key), profile.getString(R.string.empty_string));
+                        String organizationUrlValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationUrlValue);
+                        prefEditor.putString(profile.getString(R.string.organization_url_key), organizationUrlValueEncrypted);
+
+                        String organizationTitleValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_title_key), profile.getString(R.string.empty_string));
+                        String organizationTitleValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationTitleValue);
+                        prefEditor.putString(profile.getString(R.string.organization_title_key), organizationTitleValueEncrypted);
+
+                        String organizationPhoneValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_phone_key), profile.getString(R.string.empty_string));
+                        String organizationPhoneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationPhoneValue);
+                        prefEditor.putString(profile.getString(R.string.organization_phone_key), organizationPhoneValueEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String organizationAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_line_one_key), profile.getString(R.string.empty_string));
+                        String organizationAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationAddressLineOneValue);
+                        prefEditor.putString(profile.getString(R.string.organization_address_line_one_key), organizationAddressLineOneValueEncrypted);
+
+                        String organizationAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_line_two_key), profile.getString(R.string.empty_string));
+                        String organizationAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationAddressLineTwoValue);
+                        prefEditor.putString(profile.getString(R.string.organization_address_line_two_key), organizationAddressLineTwoValueEncrypted);
+
+                        String organizationCityValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_city_key), profile.getString(R.string.empty_string));
+                        String organizationCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationCityValue);
+                        prefEditor.putString(profile.getString(R.string.organization_address_city_key), organizationCityValueEncrypted);
+
+                        String organizationStateValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_state_key), profile.getString(R.string.empty_string));
+                        String organizationStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationStateValue);
+                        prefEditor.putString(profile.getString(R.string.organization_address_state_key), organizationStateValueEncrypted);
+
+                        String organizationPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_postal_code_key), profile.getString(R.string.empty_string));
+                        String organizationPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationPostalCodeValue);
+                        prefEditor.putString(profile.getString(R.string.organization_address_postal_code_key), organizationPostalCodeValueEncrypted);
+
+                        String organizationCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_country_key), profile.getString(R.string.empty_string));
+                        String organizationCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationCountryValuePref);
+                        prefEditor.putString(profile.getString(R.string.organization_address_country_key), organizationCountryValuePrefEncrypted);
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        prefEditor.apply();
+
+                        // ----------------------------------------------------------------------------------------------------------------
+
+                        String[] paramStrings = CryptoUtilities.generateParams_CreateUserPublicKey(profile.userSecurityKeyHex, profile.sharedPreferences, profile);
+
+                        assert paramStrings != null;
+                        String urlParameters2 = paramStrings[0];
+                        String transferKeyHex2 = paramStrings[1];
+
+                        urlStringsCreateUserPublicKey[0] = Constants.CREATE_USER_PUBLIC_KEY_URL;
+                        urlStringsCreateUserPublicKey[1] = urlParameters2;
+                        urlStringsCreateUserPublicKey[2] = transferKeyHex2;
+
+                        //String[] urlStrings2 = {Constants.CREATE_USER_PUBLIC_KEY_URL, urlParameters2, transferKeyHex2};
+                    }
+
+                    return result;
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -1196,158 +1359,10 @@ public class Profile extends ActivityBase implements OnClickListener, OnItemSele
             profile.messageThree.setText(result);
 
             if (result.equals(Constants.SECURITY_KEY_CREATED)) {
-
-                /*
-                 * Now that the userSecurityKeyHex has been created, encrypt the user's SharedPreferences values.
-                 */
-                Editor prefEditor = profile.sharedPreferences.edit();
-
-                // ------------------------------------------------------------------------------------------------------------
-
-                String userUuid = profile.sharedPreferences.getString(profile.getString(R.string.user_uuid_key), profile.getString(R.string.empty_string));
-                String userUuidEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, userUuid);
-                prefEditor.putString(profile.getString(R.string.user_uuid_key), userUuidEncrypted);
-
-                String firebaseDeviceId = profile.sharedPreferences.getString(profile.getString(R.string.firebase_device_id), profile.getString(R.string.empty_string));
-                String firebaseDeviceIdEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, firebaseDeviceId);
-                prefEditor.putString(profile.getString(R.string.firebase_device_id), firebaseDeviceIdEncrypted);
-
-                // ------------------------------------------------------------------------------------------------------------
-
-                String screenNameValue = profile.sharedPreferences.getString(profile.getString(R.string.screen_name_key), profile.getString(R.string.empty_string));
-                String screenNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, screenNameValue);
-                prefEditor.putString(profile.getString(R.string.screen_name_key), screenNameValueEncrypted);
-
-                String emailValue = profile.sharedPreferences.getString(profile.getString(R.string.email_key), profile.getString(R.string.empty_string));
-                String emailValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, emailValue);
-                prefEditor.putString(profile.getString(R.string.email_key), emailValueEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String firstNameValue = profile.sharedPreferences.getString(profile.getString(R.string.first_name_key), profile.getString(R.string.empty_string));
-                String firstNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, firstNameValue);
-                prefEditor.putString(profile.getString(R.string.first_name_key), firstNameValueEncrypted);
-
-                String lastNameValue = profile.sharedPreferences.getString(profile.getString(R.string.last_name_key), profile.getString(R.string.empty_string));
-                String lastNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, lastNameValue);
-                prefEditor.putString(profile.getString(R.string.last_name_key), lastNameValueEncrypted);
-
-                String phoneValue = profile.sharedPreferences.getString(profile.getString(R.string.phone_key), profile.getString(R.string.empty_string));
-                String phoneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, phoneValue);
-                prefEditor.putString(profile.getString(R.string.phone_key), phoneValueEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String legalAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_line_one_key), profile.getString(R.string.empty_string));
-                String legalAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalAddressLineOneValue);
-                prefEditor.putString(profile.getString(R.string.legal_address_line_one_key), legalAddressLineOneValueEncrypted);
-
-                String legalAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_line_two_key), profile.getString(R.string.empty_string));
-                String legalAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalAddressLineTwoValue);
-                prefEditor.putString(profile.getString(R.string.legal_address_line_two_key), legalAddressLineTwoValueEncrypted);
-
-                String legalCityValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_city_key), profile.getString(R.string.empty_string));
-                String legalCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalCityValue);
-                prefEditor.putString(profile.getString(R.string.legal_address_city_key), legalCityValueEncrypted);
-
-                String legalStateValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_state_key), profile.getString(R.string.empty_string));
-                String legalStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalStateValue);
-                prefEditor.putString(profile.getString(R.string.legal_address_state_key), legalStateValueEncrypted);
-
-                String legalPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_postal_code_key), profile.getString(R.string.empty_string));
-                String legalPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalPostalCodeValue);
-                prefEditor.putString(profile.getString(R.string.legal_address_postal_code_key), legalPostalCodeValueEncrypted);
-
-                String legalCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.legal_address_country_key), profile.getString(R.string.empty_string));
-                String legalCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, legalCountryValuePref);
-                prefEditor.putString(profile.getString(R.string.legal_address_country_key), legalCountryValuePrefEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String mailingAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_line_one_key), profile.getString(R.string.empty_string));
-                String mailingAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingAddressLineOneValue);
-                prefEditor.putString(profile.getString(R.string.mailing_address_line_one_key), mailingAddressLineOneValueEncrypted);
-
-                String mailingAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_line_two_key), profile.getString(R.string.empty_string));
-                String mailingAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingAddressLineTwoValue);
-                prefEditor.putString(profile.getString(R.string.mailing_address_line_two_key), mailingAddressLineTwoValueEncrypted);
-
-                String mailingCityValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_city_key), profile.getString(R.string.empty_string));
-                String mailingCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingCityValue);
-                prefEditor.putString(profile.getString(R.string.mailing_address_city_key), mailingCityValueEncrypted);
-
-                String mailingStateValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_state_key), profile.getString(R.string.empty_string));
-                String mailingStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingStateValue);
-                prefEditor.putString(profile.getString(R.string.mailing_address_state_key), mailingStateValueEncrypted);
-
-                String mailingPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_postal_code_key), profile.getString(R.string.empty_string));
-                String mailingPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingPostalCodeValue);
-                prefEditor.putString(profile.getString(R.string.mailing_address_postal_code_key), mailingPostalCodeValueEncrypted);
-
-                String mailingCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.mailing_address_country_key), profile.getString(R.string.empty_string));
-                String mailingCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, mailingCountryValuePref);
-                prefEditor.putString(profile.getString(R.string.mailing_address_country_key), mailingCountryValuePrefEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String organizationNameValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_name_key), profile.getString(R.string.empty_string));
-                String organizationNameValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationNameValue);
-                prefEditor.putString(profile.getString(R.string.organization_name_key), organizationNameValueEncrypted);
-
-                String organizationUrlValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_url_key), profile.getString(R.string.empty_string));
-                String organizationUrlValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationUrlValue);
-                prefEditor.putString(profile.getString(R.string.organization_url_key), organizationUrlValueEncrypted);
-
-                String organizationTitleValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_title_key), profile.getString(R.string.empty_string));
-                String organizationTitleValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationTitleValue);
-                prefEditor.putString(profile.getString(R.string.organization_title_key), organizationTitleValueEncrypted);
-
-                String organizationPhoneValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_phone_key), profile.getString(R.string.empty_string));
-                String organizationPhoneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationPhoneValue);
-                prefEditor.putString(profile.getString(R.string.organization_phone_key), organizationPhoneValueEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String organizationAddressLineOneValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_line_one_key), profile.getString(R.string.empty_string));
-                String organizationAddressLineOneValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationAddressLineOneValue);
-                prefEditor.putString(profile.getString(R.string.organization_address_line_one_key), organizationAddressLineOneValueEncrypted);
-
-                String organizationAddressLineTwoValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_line_two_key), profile.getString(R.string.empty_string));
-                String organizationAddressLineTwoValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationAddressLineTwoValue);
-                prefEditor.putString(profile.getString(R.string.organization_address_line_two_key), organizationAddressLineTwoValueEncrypted);
-
-                String organizationCityValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_city_key), profile.getString(R.string.empty_string));
-                String organizationCityValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationCityValue);
-                prefEditor.putString(profile.getString(R.string.organization_address_city_key), organizationCityValueEncrypted);
-
-                String organizationStateValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_state_key), profile.getString(R.string.empty_string));
-                String organizationStateValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationStateValue);
-                prefEditor.putString(profile.getString(R.string.organization_address_state_key), organizationStateValueEncrypted);
-
-                String organizationPostalCodeValue = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_postal_code_key), profile.getString(R.string.empty_string));
-                String organizationPostalCodeValueEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationPostalCodeValue);
-                prefEditor.putString(profile.getString(R.string.organization_address_postal_code_key), organizationPostalCodeValueEncrypted);
-
-                String organizationCountryValuePref = profile.sharedPreferences.getString(profile.getString(R.string.organization_address_country_key), profile.getString(R.string.empty_string));
-                String organizationCountryValuePrefEncrypted = CryptoUtilities.encrypt(profile.userSecurityKeyHex, organizationCountryValuePref);
-                prefEditor.putString(profile.getString(R.string.organization_address_country_key), organizationCountryValuePrefEncrypted);
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                prefEditor.apply();
-
-                // ----------------------------------------------------------------------------------------------------------------
-
-                String[] paramStrings = CryptoUtilities.generateParams_CreateUserPublicKey(profile.userSecurityKeyHex, profile.sharedPreferences, profile);
-
-                assert paramStrings != null;
-                String urlParameters = paramStrings[0];
-                String transferKeyHex = paramStrings[1];
-
-                String[] urlStrings = {Constants.CREATE_USER_PUBLIC_KEY_URL, urlParameters, transferKeyHex};
+                log("urlStringsCreateUserPublicKey[0]: " + urlStringsCreateUserPublicKey[0]);
 
                 ProcessCreateUserPublicKey processCreateUserPublicKey = new ProcessCreateUserPublicKey(profile);
-                processCreateUserPublicKey.execute(urlStrings);
+                processCreateUserPublicKey.execute(urlStringsCreateUserPublicKey);
             }
         }
     }
